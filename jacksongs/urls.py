@@ -11,7 +11,18 @@ admin.autodiscover()
 # You can also change the ``home`` view to add your own functionality
 # to the project's homepage.
 
-urlpatterns = patterns("",
+### These edits courtesy of http://gist.io/4046138
+
+urlpatterns = patterns('',
+    (r'^static/(?P<path>.*)$',
+     'django.views.static.serve',
+     {'document_root': settings.STATIC_ROOT}),)
+
+urlpatterns += patterns("",
+
+###
+
+###urlpatterns = patterns("",
 
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.

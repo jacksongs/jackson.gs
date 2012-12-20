@@ -167,6 +167,9 @@ STATICFILES_FINDERS = (
 # DATABASES #
 #############
 
+### These edits courtesy of http://gist.io/4046138 to get it working on Heroku
+
+
 #DATABASES = {
 #    "default": {
 #        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
@@ -185,6 +188,8 @@ STATICFILES_FINDERS = (
 #}
 import dj_database_url
 DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+
+###
 
 #########
 # PATHS #
