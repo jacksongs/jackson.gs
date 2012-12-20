@@ -1,2 +1,1 @@
-
-web: gunicorn jmez.wsgi -b 0.0.0.0:$PORT
+web: python manage.py collectstatic --noinput; python manage.py run_gunicorn -b 0.0.0.0:$PORT
