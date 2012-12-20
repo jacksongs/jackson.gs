@@ -167,7 +167,7 @@ STATICFILES_FINDERS = (
 # DATABASES #
 #############
 
-### These edits courtesy of http://gist.io/4046138 to get it working on Heroku - with some changes from https://devcenter.heroku.com/articles/django
+### These edits courtesy of http://gist.io/4046138 to get it working on Heroku
 
 
 #DATABASES = {
@@ -186,9 +186,9 @@ STATICFILES_FINDERS = (
 #        "PORT": "",
 #    }
 #}
-
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+
 
 ###
 
