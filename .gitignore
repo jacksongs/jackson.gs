@@ -1,3 +1,4 @@
-mezzanine-venv/*/*/*/*/*/*/*/*/*/*/*
+
 *.pyc
 .DS_Store
+mezzanine-venv/
