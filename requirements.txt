@@ -1,7 +1,7 @@
 Cartridge==0.4.9
 Django==1.4.3
 distribute==0.6.19
-psycopg2==2.4.4
+psycopg2==2.4.5
 wsgiref==0.1.2
 gunicorn==0.13.4
 South==0.7.3
