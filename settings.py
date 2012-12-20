@@ -167,7 +167,7 @@ STATICFILES_FINDERS = (
 # DATABASES #
 #############
 
-### These edits courtesy of http://gist.io/4046138 to get it working on Heroku
+### These edits courtesy of http://gist.io/4046138 to get it working on Heroku and http://stackoverflow.com/questions/10596893/deploying-django-to-heroku-psycopg2-error
 
 
 #DATABASES = {
@@ -187,7 +187,7 @@ STATICFILES_FINDERS = (
 #    }
 #}
 import dj_database_url
-DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"])}
 
 
 ###
