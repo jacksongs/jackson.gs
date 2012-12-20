@@ -1,6 +1,9 @@
+Cartridge==0.4.9
 Django==1.4.3
-mezzanine==1.2.4
-psycopg2==2.4.5
-dj-database-url==0.2.0
-gunicorn==0.14.5
-
+distribute==0.6.19
+psycopg2==2.4.4
+wsgiref==0.1.2
+gunicorn==0.13.4
+South==0.7.3
+django-storages==1.1.4
+boto==2.2.2
